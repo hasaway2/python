@@ -9,7 +9,9 @@ def print_todos():
     for todo in todos:
         print(todo)
 
+# 함수 안에서 함수 밖에 있는 변수를 사용하려면 사용한다고 적어준다
 def add_todo():
+    global tno
     title = input('할입 입력:')
     todos.append({'tno':tno, 'title':title, 'finish':False})
     tno=tno+1
